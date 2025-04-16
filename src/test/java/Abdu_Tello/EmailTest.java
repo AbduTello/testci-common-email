@@ -12,10 +12,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Date;
 
+// This is a test comment to trigger the CI workflow.
 public class EmailTest {
     private TestEmail email;
     private class TestEmail extends Email {
-        @Override
         public String getMimeMessageType() { return "text/plain"; }
         @Override
         public Email setMsg(String msg) throws EmailException {
